@@ -1,0 +1,95 @@
+/* assets/css/estilo.css */
+
+/* === Variables de color === */
+:root {
+    --primary-color: #1E88E5;    /* Azul vibrante */
+    --secondary-color: #FDD835;  /* Amarillo brillante */
+    --accent-color: #D81B60;     /* Rosa intenso */
+    --text-color: #333333;
+    --bg-light: #F3F6F9;
+    --bg-dark: #212121;
+}
+
+/* Body */
+body {
+    background-color: var(--bg-light);
+    color: var(--text-color);
+}
+
+/* Navbar personalizada */
+.navbar-custom {
+    background-color: var(--primary-color);
+}
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: #FFFFFF;
+}
+.navbar-custom .nav-link:hover {
+    color: var(--accent-color);
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #1565C0;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border: none;
+    color: #212121;
+}
+.btn-secondary:hover {
+    background-color: #FBC02D;
+}
+
+/* Tarjetas */
+.card-custom {
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Tablas */
+.table-custom th {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.table-custom tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+.table-custom tbody tr:nth-child(odd) {
+    background-color: #FAFAFA;
+}
+.table-custom tbody tr:hover {
+    background-color: rgba(30,136,229,0.1);
+}
+
+/* Formularios */
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px rgba(253,216,53,0.5);
+}
+
+/* Pie de página */
+.footer {
+    background-color: var(--bg-dark);
+    color: #CCCCCC;
+    padding: 1rem 0;
+}
+
+/* Imágenes de habitaciones */
+.room-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent-color);
+}
